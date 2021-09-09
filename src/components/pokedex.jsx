@@ -47,7 +47,6 @@ const PokeDex = () => {
                 isClosable: true,
             })
         }
-
     }
 
     //sets data for pokemon card when pokemon is clicked from 'My Team'
