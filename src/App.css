@@ -1,0 +1,139 @@
+/*CSS for pokedex.jsx */
+
+.container {
+  text-align: center;
+}
+
+.pokedex-container {
+  background-color: #282c34;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 20px !important;
+  height: 650px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.inner-pokedex {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.inner-pokedex .search {
+  margin: 5px;
+  border-radius: 20px !important;
+  background-color: white;
+}
+
+.inner-pokedex .search:focus {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #ebebec;
+}
+
+.pokemon-team {
+  margin: 0 auto;
+  height: auto;
+  margin-top: 30px !important;
+  width: 100%;
+  position: relative;
+}
+
+.inner-team {
+  display: inline-block !important;
+}
+
+.my-pokemon {
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #282c34;
+  width: 100px;
+}
+.my-pokemon:hover {
+  outline: none;
+  box-shadow: 0 0 0 5px rgb(21, 228, 83);
+  background-color: #282c34;
+}
+
+.my-team {
+  overflow-y: scroll;
+  background-color: #282c34;
+}
+
+.pokedex {
+  background-color: #282c34;
+}
+
+
+/*CSS for pokemonCard.jsx */
+
+.background-card {
+  background-color: #ebebec;
+  position: relative;
+  border-radius: 10px;
+  width: 300px !important;
+  border: 7px solid rgb(187, 160, 6);
+  background-image: url('../src/assets/card-bg.png');
+  box-shadow: rgba(50, 50, 93, 0.6) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  
+}
+
+.pokemon-card {
+  margin-top: 5px;
+  background-color: #ebebec;
+  border-radius: 15px;
+  border: 4px solid rgb(39, 129, 11);
+  background-image: url('../src/assets/pokemon-bg.png');
+  background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.6) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.pokemon-img {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+  position: absolute;
+  left: 38px !important;
+  top: 63px !important;
+}
+
+.pokemon-name {
+  font-size: 17px;
+}
+
+.info-stack {
+  display: inline-block !important;
+}
+
+.info-stack .stack {
+  display: inline-block;
+  margin: 5px;
+}
+
+.info-stack .stack .stack-text {
+  font-weight: 800 !important;
+  color:#201f1fd3;
+}
+
+.delete-icon:hover {
+  transform: scale(1.45);
+  color: 'red' !important;
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
