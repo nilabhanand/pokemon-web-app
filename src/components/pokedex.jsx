@@ -117,9 +117,9 @@ const PokeDex = () => {
 
     return (
         <div className='container' height='100vh'>
-            <Flex className='pokedex-container' alignItems='center' p={8}>
+            <Flex className='pokedex-container' p={4}>
                 <GridItem bg='red.500' className='inner-pokedex' p={3}>
-                    <Input onChange={handlePokemonName} w='300px' className='search' placeholder="Pikachu" variant='filled' mb={3} />
+                    <Input onChange={handlePokemonName} w='200px' className='search' placeholder="Pikachu" variant='filled' mb={3} />
                     <Button onClick={() => searchPokemon(pokemonName)} colorScheme='green'>Search</Button>
                     <div>
                         {
