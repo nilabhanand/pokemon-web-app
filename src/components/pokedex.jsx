@@ -24,7 +24,8 @@ const PokeDex = () => {
         setPokemonName(event.target.value);
     }
 
-    //api call for pokemon & sets all variable for pokemon data
+    //api call for pokemon & sets all variable for pokemon data 
+    //adding a comment for testing
     const searchPokemon = async (name) => {
         const result = await PokemonActions.getPokemonInfo(name.toLowerCase());
 
